@@ -1,7 +1,7 @@
 # Basic ASP.NET Core Blazor Tutorial (Simple Project Manager Demo)
 This tutorial explains how to create an XAF application that is used within a company department and can be opened in desktop and mobile browsers. It uses **DevExpress ASP.NET Core Blazor** UI controls for data presentation, and **DevExpress XPO** for data access.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/9542a20f-7113-4eda-ae8c-c91dcf0549de)
+![251030327-9542a20f-7113-4eda-ae8c-c91dcf0549de](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/d2870225-14f0-4ef6-a501-3e347a11419c)
 
 This ASP.NET Core Blazor application can be used in the following scenarios:
 
@@ -17,34 +17,41 @@ This topic describes how to use the Solution Wizard to create an XAF application
 1. From Visual Studio’s main menu, select File | New | Project… to invoke the Create a new project dialog.
 2. Select DevExpress v22.1 XAF Template Gallery and click Next.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/e18fb92f-af50-438d-a7c8-f05fe46c8331)
+![251030835-e18fb92f-af50-438d-a7c8-f05fe46c8331](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/2b71a320-d17b-4d75-b735-9ff59aff76cc)
+
 
 3. Specify the project name (“SimpleProjectManager”) and click Create.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/64de43fc-0f5b-4b7c-bf15-146ee2f01a17)
+![251030988-64de43fc-0f5b-4b7c-bf15-146ee2f01a17](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/9602440d-7006-4096-a241-8d05d80e70b1)
+
 
 4. In the invoked Template Gallery, select XAF Solution Wizard (.NET Core) in the .NET Core section and click Run Wizard.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/6ff3c04c-7767-4e7d-a8fc-9dab25f77341)
+![251031048-6ff3c04c-7767-4e7d-a8fc-9dab25f77341](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/2c40b70c-a429-44d2-934a-68859cef91ae)
+
 
 5. Choose Web (ASP.NET Core Blazor) and click Next.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/7a1df1a7-aed8-4b0d-86f8-435c06731de4)
+![251031103-7a1df1a7-aed8-4b0d-86f8-435c06731de4](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/adbd517a-1fe6-4242-91f3-f26fe5baeaba)
+
 
 6. Choose eXpress Persistent Objects and click Next.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/3d0c61dd-e13c-48a1-95c0-ef107472fd77)
+![251031152-3d0c61dd-e13c-48a1-95c0-ef107472fd77](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/3a46c7a3-9515-47a0-92a9-679393ab7cc3)
+
 
 > **Note:** You can use the Entity Framework Core﻿ or eXpress Persistent Objects (XPO)﻿ as your project’s object-relational mapping (ORM)﻿ tool. This tutorial demonstrates the XPO-based approach.
 
 7. You can now choose security options for your application. Choose None as the Authentication type. This tutorial does not show how to use the XAF Security System. Click Finish.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/cd52a99f-9abb-4b93-8c7b-c1fd54afc984)
+![251031462-cd52a99f-9abb-4b93-8c7b-c1fd54afc984](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/400b353c-247b-487d-b9de-b8fc919983c5)
+
 
 
 The Solution Wizard creates a solution with the following projects:
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/3256a2ab-420a-4c5f-9b32-38af2fe2f80b)
+![251031692-3256a2ab-420a-4c5f-9b32-38af2fe2f80b](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/1ca4ef5d-e9af-40e9-992e-e8db601dc27a)
+
 
 ### Specify the Database Connection
 
@@ -313,9 +320,10 @@ Press **Start Debugging** or the **F5** key to run the application.
 
 The following image shows the application’s auto-generated UI:
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/4304efd8-c035-4174-905f-902eff50a15d)
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/1027caf5-0269-42d6-b06b-dabc9c93ddb7)
+![251035891-1027caf5-0269-42d6-b06b-dabc9c93ddb7](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/f2dd61bb-5415-4251-a06f-eddf289d9806)
+![251035891-1027caf5-0269-42d6-b06b-dabc9c93ddb7](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/06b04418-60c0-4ff8-9b0f-eb72f629f577)
+
 
 XAF generates this UI for List and Detail Views with CRUD operations and other functionality (view, search, etc.). The Detail View contains editors (text box, memo, drop-down box, image and date picker, etc.) that display different business class properties.
 
@@ -327,7 +335,8 @@ To display reference properties (the **ProjectTask**‘s **AssignedTo** property
 
 The database is automatically created based on your data model. The database columns are generated based on the persistence settings specified in the data model (such as field size set via an attribute). The image below shows the **Object Explorer** window from the **SQL Server Management Studio**.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/2e004707-80a7-4aad-a706-8a9a27f203a5)
+![251036471-2e004707-80a7-4aad-a706-8a9a27f203a5](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/e7e6e729-92b7-43c3-8461-7829b71fe853)
+
 
 The applications’ navigation control contains items for each database table. These navigation items allow a user to navigate to a List View with records and open their Detail Views.
 
@@ -361,7 +370,8 @@ public class Testimonial {
 
 Run the ASP.NET Core Blazor application and open the **Testimonial** Detail View. The following image illustrates the standard and customized UI:
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/77619135-0720-4e26-88ee-799517321f49)
+![251037209-77619135-0720-4e26-88ee-799517321f49](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/c3848fcd-d4d0-4917-a297-d661bb638b45)
+
 
 Note that this approach adds a dependency from XAF assemblies to your data access layer (DAL).
 
@@ -373,11 +383,13 @@ Follow the steps below to change the Customer business object’s image and enab
 1. In the **Solution Explorer**, right-click the* SimpleProjectManager.Module* project and select Open **Model Editor** in the context menu or double-click the file with the *XAFML* extension.
 2. In the **Model Editor**, navigate to the **BOModel | Customer** node in the tree and set the `ObjectCaptionFormat` property to **{0:FullName}**.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/2d2b5062-c3a9-4b16-abd6-cda4cb4a48c2)
+![251037797-2d2b5062-c3a9-4b16-abd6-cda4cb4a48c2](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/ff0fd9d2-07b6-4e81-8ffd-b313c58233b7)
+
 
 The image below illustrates the result. The **Customer** Detail View displays the **FullName** property value in the caption.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/d064f4a4-b627-4dac-9f15-1f898f8435a0)
+![251037209-77619135-0720-4e26-88ee-799517321f49](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/158b5833-c788-4eb8-a0fa-37330985fdf7)
+
 
 ### Define Custom Logic and UI Elements
 
@@ -427,7 +439,8 @@ namespace SimpleProjectManager.Module.Controllers {
 
 The image below shows the MarkCompleted Action in the ASP.NET Core Blazor application.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/0b663f2a-2551-4629-bbce-ce3d44d562e9)
+![251038767-0b663f2a-2551-4629-bbce-ce3d44d562e9](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/dcd0b3da-ec2b-40fc-9357-499395f9906e)
+
 
 The **MarkCompleted** Action iterates the selected objects, modifies their properties, commits changes to the database, and refreshes the screen.
 
@@ -443,7 +456,8 @@ This topic describes how to add additional modules and business objects from an 
 
 1. In the **Solution Explorer**, right-click the **SimpleProjectManager.Blazor.Server** project and select **Manage NuGet Packages**. In the invoked **NuGet Package Manager**, choose the **DevExpress 2x.x** Local package source and install the **DevExpress.ExpressApp.Validation** and **DevExpress.ExpressApp.Validation.Blazor** NuGet packages.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/ef0be94f-82ef-4dba-b70b-95a638ea919a)
+![251039437-ef0be94f-82ef-4dba-b70b-95a638ea919a](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/9560900a-ae7b-4f71-8225-108a5c2dc4c1)
+
 
 2. Open the *SimpleProjectManager.Blazor.Server\Module.cs* file and add the following code to the Module constructor:
 
@@ -474,7 +488,8 @@ public class ProjectTask : BaseObject {
 
 4. Run the ASP.NET Core Blazor application and create several project tasks. The added module validates project tasks according to the specified settings.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/c8c91a62-5726-45f5-9764-1deb43500dd6)
+![251039835-c8c91a62-5726-45f5-9764-1deb43500dd6](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/6c1449c0-6c1a-4e99-bcd4-4c6c10b2d743)
+
 
 
 ### Data Models from External Libraries
@@ -498,10 +513,12 @@ namespace SimpleProjectManager.Module {
 
 2. Invoke the **Model Editor** for the **SimpleProjectManager.Module** project and navigate to the **NavigationItems | Items | Planning | Items** node. Create a new navigation item and set its **Caption** property to “Employee” and **View** to “Person_ListView”.
  
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/73970991-8242-42b9-bafb-944bf688c715)
+![251040328-73970991-8242-42b9-bafb-944bf688c715](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/a0ef55f1-a521-4e18-9b18-fffb312eabf2)
+
 
 3. Run the application. The navigation control shows the new item in the **Planning** section.
 
-![image](https://github.com/lianhdez95/Basic-ASP.NET-Core-Blazor-Tutorial/assets/126447472/389405ce-2ea8-42df-82a4-c0e8a63584e4)
+![251040694-389405ce-2ea8-42df-82a4-c0e8a63584e4](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/84e723c5-3578-478b-ad0f-bc652f3f0510)
+
 
 > **Note:** You can also use third-party modules﻿ or create your own reusable modules for use in multiple XAF applications.
