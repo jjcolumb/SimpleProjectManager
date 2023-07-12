@@ -40,9 +40,9 @@ This topic describes how to use the Solution Wizard to create an XAF application
 ![251031152-3d0c61dd-e13c-48a1-95c0-ef107472fd77](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/3a46c7a3-9515-47a0-92a9-679393ab7cc3)
 
 
-> **Note:** You can use the Entity Framework Core﻿ or eXpress Persistent Objects (XPO)﻿ as your project’s object-relational mapping (ORM)﻿ tool. This tutorial demonstrates the XPO-based approach.
+> **Note:** You can use the [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/)﻿ or [eXpress Persistent Objects (XPO)](https://www.devexpress.com/Products/NET/ORM/)﻿ as your project’s [object-relational mapping (ORM)](https://en.wikipedia.org/wiki/Object-relational_mapping)﻿ tool. This tutorial demonstrates the XPO-based approach.
 
-7. You can now choose security options for your application. Choose None as the Authentication type. This tutorial does not show how to use the XAF Security System. Click Finish.
+7. You can now choose security options for your application. Choose None as the Authentication type. This tutorial does not show how to use the XAF [Security System](https://docs.devexpress.com/eXpressAppFramework/113366/data-security-and-safety/security-system?v=22.1). Click Finish.
 
 ![251031462-cd52a99f-9abb-4b93-8c7b-c1fd54afc984](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/400b353c-247b-487d-b9de-b8fc919983c5)
 
@@ -257,7 +257,7 @@ namespace SimpleProjectManager.Module.BusinessObjects.Planning {
 
 ### Populate the Database with Initial Data
 
-Open the *Updater.cs* file from the *SimpleProjectManager.Module* project’s Database Update folder and override the `ModuleUpdater.UpdateDatabaseAfterUpdateSchema` method as shown below:
+Open the *Updater.cs* file from the *SimpleProjectManager.Module* project’s Database Update folder and override the [`ModuleUpdater.UpdateDatabaseAfterUpdateSchema`](https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.Updating.ModuleUpdater.UpdateDatabaseAfterUpdateSchema?v=22.1) method as shown below:
 
 ```csharp
 using DevExpress.Persistent.BaseImpl;
@@ -310,7 +310,7 @@ public class Updater : ModuleUpdater {
     //...
 }
 ```
-In the code above, the Object Space is used to create initial data. This is one of the main framework abstractions that allows you to perform CRUD (create-read-update-delete) operations.
+In the code above, the [Object Space](https://docs.devexpress.com/eXpressAppFramework/113707/data-manipulation-and-business-logic/object-space?v=22.1) is used to create initial data. This is one of the main framework abstractions that allows you to perform CRUD (create-read-update-delete) operations.
 
 > **Note:** You can refer to Supply Initial Data for more information on how to initially populate the database.
 
@@ -325,11 +325,11 @@ The following image shows the application’s auto-generated UI:
 ![251035891-1027caf5-0269-42d6-b06b-dabc9c93ddb7](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/06b04418-60c0-4ff8-9b0f-eb72f629f577)
 
 
-XAF generates this UI for List and Detail Views with CRUD operations and other functionality (view, search, etc.). The Detail View contains editors (text box, memo, drop-down box, image and date picker, etc.) that display different business class properties.
+XAF generates this UI for List and Detail Views with CRUD operations and other functionality (view, search, etc.). The Detail View contains editors (text box, memo, drop-down box, image and date picker, etc.) that display [different business class properties](https://docs.devexpress.com/eXpressAppFramework/113014/business-model-design-orm/data-types-supported-by-built-in-editors?v=22.1).
 
-Lookup and collection editors display properties that are part of an association. For example, the **Project** and **ProjectTask** classes participate in a **One-To-Many** relationship. The editor for the “Many” part (the Project‘s Tasks property) allows users to add, edit, remove, and export tasks.
+Lookup and collection editors display properties that are part of an association. For example, the **Project** and **ProjectTask** classes participate in a [**One-To-Many** relationship](https://docs.devexpress.com/eXpressAppFramework/112654/business-model-design-orm/business-model-design-with-xpo/relationships-between-persistent-objects-in-code-and-ui?v=22.1#onetomanyaggregated). The editor for the “Many” part (the Project‘s Tasks property) allows users to add, edit, remove, and export tasks.
 
-To display reference properties (the **ProjectTask**‘s **AssignedTo** property), XAF generates a drop-down list of persons in the UI and creates a foreign key that references the **Person** table in the database. This drop-down list displays a person’s full names because the **FullName** property is the default property of the **Person** class.
+To display [reference properties](https://docs.devexpress.com/eXpressAppFramework/113572/business-model-design-orm/data-types-supported-by-built-in-editors/reference-foreign-key-complex-type-properties?v=22.1) (the **ProjectTask**‘s **AssignedTo** property), XAF generates a drop-down list of persons in the UI and creates a foreign key that references the **Person** table in the database. This drop-down list displays a person’s full names because the **FullName** property is the default property of the **Person** class.
 
 ### Auto-Created Database
 
@@ -351,9 +351,9 @@ You can use the auto-generated UI or customize it according to your business req
 
 ### *Use Attributes in Code*
 
-Built-in attributes allow you to edit the Application Model, create controls, and customize the application’s appearance and behavior (validation, fields’ visibility and formatting, etc.) in the Business Model‘s code. With this declarative approach, you can add only one line of code without using the model editor or creating Controllers.
+[Built-in attributes](https://docs.devexpress.com/eXpressAppFramework/112701/business-model-design-orm/data-annotations-in-data-model?v=22.1) allow you to edit the [Application Model](https://docs.devexpress.com/eXpressAppFramework/112579/ui-construction/application-model-ui-settings-storage?v=22.1), create controls, and customize the application’s appearance and behavior (validation, fields’ visibility and formatting, etc.) in the [Business Model](https://docs.devexpress.com/eXpressAppFramework/113664/business-model-design-orm?v=22.1)‘s code. With this declarative approach, you can add only one line of code without using the [model editor](https://docs.devexpress.com/eXpressAppFramework/401954/getting-started/basic-tutorial-blazor/customize-the-application-ui-and-behavior-blazor?v=22.1#use-the-model-editor) or creating [Controllers](https://docs.devexpress.com/eXpressAppFramework/401954/getting-started/basic-tutorial-blazor/customize-the-application-ui-and-behavior-blazor?v=22.1#define-custom-logic-and-ui-elements).
 
-Apply the `SizeAttribute` to the **Testimonial**‘s **Quote** property and pass **Unlimited** as the attribute’s parameter to replace a single-line editor with a multi-line editor.
+Apply the [`SizeAttribute`](https://docs.devexpress.com/XPO/DevExpress.Xpo.SizeAttribute?v=22.1) to the **Testimonial**‘s **Quote** property and pass **Unlimited** as the attribute’s parameter to replace a single-line editor with a multi-line editor.
 
 ```csharp
 public class Testimonial {
@@ -373,7 +373,7 @@ Run the ASP.NET Core Blazor application and open the **Testimonial** Detail View
 ![251037209-77619135-0720-4e26-88ee-799517321f49](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/c3848fcd-d4d0-4917-a297-d661bb638b45)
 
 
-Note that this approach adds a dependency from XAF assemblies to your data access layer (DAL).
+Note that this approach adds a dependency from XAF assemblies to your [data access layer (DAL)](https://docs.devexpress.com/XPO/2123/connect-to-a-data-store?v=22.1#data-access-layer).
 
 ### *Use the Model Editor*
 
@@ -381,7 +381,7 @@ Data model settings are exported to the application’s metadata (Application Mo
 Follow the steps below to change the Customer business object’s image and enable images in the navigation control via the Model Editor:
 
 1. In the **Solution Explorer**, right-click the* SimpleProjectManager.Module* project and select Open **Model Editor** in the context menu or double-click the file with the *XAFML* extension.
-2. In the **Model Editor**, navigate to the **BOModel | Customer** node in the tree and set the `ObjectCaptionFormat` property to **{0:FullName}**.
+2. In the Model Editor, navigate to the **BOModel** | **Customer** node in the tree and set the [`ObjectCaptionFormat`](https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.Model.IModelClass.ObjectCaptionFormat?v=22.1) property to **{0:FullName}**.
 
 ![251037797-2d2b5062-c3a9-4b16-abd6-cda4cb4a48c2](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/ff0fd9d2-07b6-4e81-8ffd-b313c58233b7)
 
@@ -393,11 +393,11 @@ The image below illustrates the result. The **Customer** Detail View displays th
 
 ### Define Custom Logic and UI Elements
 
-The Model Editor and built-in attributes allow you to change the options of the UI element and control. Other changes can be implemented only in code. For example, you can use the Controllers and Actions mechanism to replace the application’s default UI parts or implement custom business logic.
+The Model Editor and built-in attributes allow you to change the options of the UI element and control. Other changes can be implemented only in code. For example, you can use the  [Controllers](https://docs.devexpress.com/eXpressAppFramework/112621/ui-construction/controllers-and-actions/controllers?v=22.1)  and  [Actions](https://docs.devexpress.com/eXpressAppFramework/112622/ui-construction/controllers-and-actions/actions?v=22.1)  mechanism to replace the application’s default UI parts or implement custom business logic.
 
-A Controller is a component that you can use to change the application flow, customize UI elements, and implement custom user interaction. Controllers can also include Actions. Actions are displayed in the UI as interactive elements (buttons, menu items, etc.) and execute custom business logic.
+A Controller is a component that you can use to change the application flow, customize UI elements, and implement custom user interaction. Controllers can also include  [Actions](https://docs.devexpress.com/eXpressAppFramework/112622/ui-construction/controllers-and-actions/actions?v=22.1). Actions are displayed in the UI as interactive elements (buttons, menu items, etc.) and execute custom business logic.
 
-Follow the steps below to implement a `SimpleAction` that allows a user to mark the selected **Project Tasks** as completed and sets the **EndDate** property to the current date and time:
+Follow the steps below to implement a  [`SimpleAction`](https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.Actions.SimpleAction?v=22.1)  that allows a user to mark the selected  **Project Tasks**  as completed and sets the  **EndDate**  property to the current date and time:
 1. In the **Solution Explorer**, right-click the *SimpleProjectManager.Module\Controllers* folder and select **Add | Class…** in the context menu. Set the class name to **ProjectTaskController**.
 2. Replace the created class code with the following:
 
@@ -446,13 +446,13 @@ The **MarkCompleted** Action iterates the selected objects, modifies their prope
 
 Alternatively, you can …
 
-* implement the generic `ObjectViewController<ViewType, ObjectType>` instead of the `ViewController`. For the **ObjectViewController**, you can specify the View’s and object’s type this Controller should be activated for in the generic **ViewType** and **ObjectType** parameters: Define the Scope of Controllers and Actions.
-* use the `ActionAttribute` to create an action directly from a business class method.
+-   implement the generic  [`ObjectViewController<ViewType, ObjectType>`](https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.ObjectViewController-2?v=22.1)  instead of the  [ViewController](https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.ViewController?v=22.1). For the  **ObjectViewController**, you can specify the View’s and object’s type this Controller should be activated for in the generic  **ViewType**  and  **ObjectType**  parameters:  [Define the Scope of Controllers and Actions](https://docs.devexpress.com/eXpressAppFramework/113103/ui-construction/controllers-and-actions/define-the-scope-of-controllers-and-actions?v=22.1).
+-   use the  [`ActionAttribute`](https://docs.devexpress.com/eXpressAppFramework/DevExpress.Persistent.Base.ActionAttribute?v=22.1)  to create an action directly from a business class method. 
 
 
 ## Reuse Implemented Functionality
 
-This topic describes how to add additional modules and business objects from an external library to extend the application’s functionality.
+This topic describes how to add [additional modules](https://docs.devexpress.com/eXpressAppFramework/118046/application-shell-and-base-infrastructure/application-solution-components/modules?v=22.1#modules-shipped-with-xaf) and business objects from an external library to extend the application’s functionality.
 
 1. In the **Solution Explorer**, right-click the **SimpleProjectManager.Blazor.Server** project and select **Manage NuGet Packages**. In the invoked **NuGet Package Manager**, choose the **DevExpress 2x.x** Local package source and install the **DevExpress.ExpressApp.Validation** and **DevExpress.ExpressApp.Validation.Blazor** NuGet packages.
 
@@ -474,7 +474,7 @@ namespace SimpleProjectManager.Blazor.Server {
 }
 ```
 
-3. Open the *SimpleProjectManager.Module\BusinessObjects\Planning.cs* file and apply the `RuleCriteriaAttribute` to the **ProjectTask** class:
+3. Open the _SimpleProjectManager.Module\BusinessObjects\Planning.cs_ file and apply the [`RuleCriteriaAttribute`](https://docs.devexpress.com/eXpressAppFramework/DevExpress.Persistent.Validation.RuleCriteriaAttribute?v=22.1) to the **ProjectTask** class:x    
 
 ```csharp
 using DevExpress.Persistent.Validation;
@@ -494,7 +494,7 @@ public class ProjectTask : BaseObject {
 
 ### Data Models from External Libraries
 
-You can add a business class to your application from the **Business Class** Library. XAF generates UI elements according to this class’ structure. The following steps show how to add the **Person** class from the **Business Class** Library and create the **Employee** navigation item to display **Person** objects in a list.
+You can add a business class to your application from the [**Business Class**](https://docs.devexpress.com/eXpressAppFramework/112571/business-model-design-orm/built-in-business-classes-and-interfaces?v=22.1) Library. XAF generates UI elements according to this class’ structure. The following steps show how to add the **Person** class from the **Business Class** Library and create the **Employee** navigation item to display **Person** objects in a list.
 
 1. Open the *SimpleProjectManager.Module\Module.cs* file and add the following code to the Module constructor:
 
@@ -521,4 +521,4 @@ namespace SimpleProjectManager.Module {
 ![251040694-389405ce-2ea8-42df-82a4-c0e8a63584e4](https://github.com/jjcolumb/SimpleProjectManager/assets/126447472/84e723c5-3578-478b-ad0f-bc652f3f0510)
 
 
-> **Note:** You can also use third-party modules﻿ or create your own reusable modules for use in multiple XAF applications.
+> **Note:** You can also use [third-party modules](https://www.devexpress.com/products/net/application_framework/#community)﻿ or create your own reusable modules for use in multiple XAF applications.
