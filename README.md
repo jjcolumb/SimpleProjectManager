@@ -1,5 +1,6 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/jjcolumb/SimpleProjectManager#readme)
 [![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/jjcolumb/SimpleProjectManager/blob/master/README.es.md)
+Disponible en dos idiomas
 
 # Basic ASP.NET Core Blazor Tutorial (Simple Project Manager Demo)
 This tutorial explains how to create an XAF application that is used within a company department and can be opened in desktop and mobile browsers. It uses **DevExpress ASP.NET Core Blazor** UI controls for data presentation, and **DevExpress XPO** for data access.
