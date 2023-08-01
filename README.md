@@ -1,4 +1,4 @@
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/jjcolumb/SimpleProjectManager#readme)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/jjcolumb/SimpleProjectManager/blob/master/README.en.md)
 
 # Tutorial básico de ASP.NET  Core Blazor (demostración de Simple Project Manager)
 
